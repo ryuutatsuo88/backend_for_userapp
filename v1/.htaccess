@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+#local path
+RewriteBase /GitRepositories/backend_for_userapp/v1/
+# server path
+#RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
