@@ -7,8 +7,6 @@ and build my own backend that works with it.
 
 I used Slim PHP Framework for the backend and build all the routes. I used PHP UserCake for the User Managment system. 
 
-
-
 Configuration
 =============
 
@@ -20,6 +18,27 @@ Configuration
 
 4. set baseaddress and secure in app.js
 
+
+Completed 
+=============
+1. token.heartbeat service 
+2. user.logout
+3. user.login
+4. user.get
+5. user.save
+6. user.verifyEmail
+7. JSONP
+
+Todo
+=============
+1. Social OAuth 
+2. implement reset and change password
+3. Clean up PHP to return error messages in all possible error scenarios
+
+
+Issues
+=============
+1. There is a bug with cors calls
 
 
 Things Used to build this
