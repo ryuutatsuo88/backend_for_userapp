@@ -18,6 +18,8 @@ Configuration
 
 3. create a DB from the SQL dump 
 
+4. set baseaddress and secure in app.js
+
 
 
 Things Used to build this
