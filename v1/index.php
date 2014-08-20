@@ -332,43 +332,5 @@ $app->run();
 		    }
 		}
 	}
-
-	function my_uni ($str) {
-		return preg_replace_callback('/\\\\u([0-9a-f]{4})/i', 'replace_my_unicode', $str);
-	}
-			
-	function replace_my_unicode($match) {
-		return mb_convert_encoding(pack('H*', $match[1]), 'UTF-8', 'UCS-2BE');
-	}
-	
-	function uncodeback ($str) {
-		return str_replace('\\\\', "\\", $str);
-	}
-	
-	function uncode ($str) {
-		return str_replace('"', "", $str);
-	}	
-	
-	function myapp_areEqual($a, $b) {
-		return ($a->username . "_" .$a->user_id . $a->user_id . $a->user_id == $b);
-	}
-	
-	function myapp_getPostVar($v) {
-		return $v;
-	}
-	
-	function myapp_isLoggedIn($u) {
-		return $u->id;
-	}
-	
-	function isSetNotEmpty($var) {
-		return (isset($var) && !empty($var));	
-	}
-	
-	function checkMyHeaders() {
-		//$request = getallheaders();
-	    return (isset($_POST["application"]) && $_POST["application"] =="speakniwota");// && 
-	    		//isset($request["application"]) && $request["application"] =="speakniwota");
-	}
 	
 	?>
